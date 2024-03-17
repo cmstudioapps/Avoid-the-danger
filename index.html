@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta rel="description" content="Um RPG de decisões">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
@@ -72,7 +71,7 @@ body {
     
   }
   
-  img {
+  #personagem {
     z-index: 0;
     height: 400px;
     margin: 0;
@@ -81,6 +80,12 @@ body {
     left: 64%;
     top: 27%;
     
+    
+  }
+  
+  button {
+    
+    padding: 10px;
     
   }
   
@@ -104,23 +109,30 @@ body {
   
   </form>
 </dialog>
+
+<dialog id="carregar">
+  <h2>Carregando...</h2>
+</dialog>
 <div class="container">
   <h2>Clique abaixo para doações</h2>
   <button onclick="doar()">Doar 1 real para o projeto</button>
 </div>
 
 <div id="sombra">
-  <img src="personagem.png" alt="">
+  <img id="personagem" src="personagem.png" alt="">
 </div>
 
 
-
+<button id="insta" onclick="insta()">Ver no instagram <img src="https://i.imgur.com/KR25guK.png" alt="" height="15px"></button>
 <div class="about-container">
   <h2>Sobre o projeto</h2>
   
   
   <p id="sobre"></p>
 </div>
+
+ 
+
 <script src="main.js">main.js</script>
 </body>
 </html>
