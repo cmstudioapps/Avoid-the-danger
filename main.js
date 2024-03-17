@@ -1,6 +1,7 @@
 var nome = localStorage.getItem("nome") || "Thomaz"
 var email = localStorage.getItem("email")
 var dialogo = document.getElementById("login")
+var carregar = document.getElementById("carregar")
 if (!nome || !email) {
   
   dialogo.showModal()
@@ -8,7 +9,7 @@ if (!nome || !email) {
 }
 
 var sobre = document.getElementById("sobre")
-sobre.innerHTML = `você está apoiando o jogo de navegador chamado "Avoid the danger", um RPG de decisões. <br> A exatos 2 anos ouve um assassinato, a vítima se chamava ${nome}, e foi encontrado na escada da escola, ${nome} era estudante do terceiro ano do ensino médio e a polícia não encontrou pistas sobre o que havia acontecido.<br> ${nome} Você ganhou uma nova chance! tome sábias decisões desta vez!`
+sobre.innerHTML = `você está apoiando o jogo de navegador chamado "Avoid the danger", um RPG de decisões. <br> A exatos 2 anos ouve um assassinato, a vítima se chamava ${nome}, e foi encontrado na escada da escola, ${nome} era estudante do terceiro ano do ensino médio e a polícia não encontrou pistas sobre o que havia acontecido.<br> ${nome} Você ganhou uma nova chance! tome sábias decisões desta vez!<br><br>O jogo está sendo desenvolvido por Caio multiversando do CM STUDIO!`
 function ok() {
   // Tab to edit
 
@@ -18,7 +19,28 @@ nome = document.getElementById("nome").value
 localStorage.setItem("nome",nome)
 dialogo.close()
 }
-
+carregar.showModal()
 function doar() {
-  window.open("https://livepix.gg/caiomultiversando")
+  carregar.showModal()
+  setTimeout(()=> {
+    window.open("https://livepix.gg/caiomultiversando")
+    carregar.close()
+    
+  },2000)
+  
+  
+}
+
+  
+function insta() {
+  carregar.showModal()
+  
+  
+  setTimeout(()=> {
+    window.open("https://livepix.gg/caiomultiversando")
+    carregar.close()
+    
+  },2000)
+  
+  
 }
