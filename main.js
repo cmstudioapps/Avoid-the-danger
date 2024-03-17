@@ -1,4 +1,4 @@
-var nome = localStorage.getItem("nome")
+var nome = localStorage.getItem("nome") || "Thomaz"
 var email = localStorage.getItem("email")
 var dialogo = document.getElementById("login")
 if (!nome || !email) {
