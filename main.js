@@ -19,7 +19,7 @@ nome = document.getElementById("nome").value
 localStorage.setItem("nome",nome)
 dialogo.close()
 }
-carregar.showModal()
+
 function doar() {
   carregar.showModal()
   setTimeout(()=> {
