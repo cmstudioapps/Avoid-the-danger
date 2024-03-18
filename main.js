@@ -37,7 +37,7 @@ function insta() {
   
   
   setTimeout(()=> {
-    window.open("https://livepix.gg/caiomultiversando")
+    window.open("https://www.instagram.com/cm_studio_oficial?igsh=ZGUzMzM3NWJiOQ==")
     carregar.close()
     
   },2000)
